@@ -1,0 +1,50 @@
+{
+	"layer": "top",
+	"modules-left": ["hyprland/workspaces", "custom/appmenu", "mpd", "sway/mode"],
+	"modules-center": ["clock"],
+	"modules-right": ["network", "pulseaudio", "temperature", "cpu", "memory"],
+	"mpd": {
+		"tooltip": false,
+		"format": "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})",
+		"format-disconnected": "ﳌ",
+		"format-stopped": "",
+        "state-icons": {
+            "playing": "",
+            "paused": ""
+        }
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": ["🎵"]
+		}
+	},
+	"network": {
+		"tooltip": false,
+		"format-wifi": " {essid}",
+		"format-ethernet": " {ipaddr}"
+	},
+	"cpu": {
+		"tooltip": false,
+		"format": "cpu {}%"
+	},
+	"memory": {
+		"tooltip": false,
+		"format": "RAM {}%"
+	},
+         "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "active": ""
+    },
+    "persistent-workspaces": {
+      "*": 2
+    },
+    "disable-scroll": true,
+    "all-outputs": true,
+    "show-special": true
+  }
+}      

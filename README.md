@@ -1,1 +1,1 @@
-# this is a personal project and I`m perfecting it 
+# this is a personal project and I'm perfecting it 
